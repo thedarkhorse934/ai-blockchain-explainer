@@ -1,5 +1,4 @@
-from blockchain.fetch_transaction import fetch_transaction
-
+from src.blockchain.fetch_transaction import fetch_transaction
 
 def main():
     tx_hash = 0x20c4b5ac97f191a7d7e2859766306dd95c60a8d580afdcb6b990b8b5b6723231
