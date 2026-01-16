@@ -47,7 +47,9 @@ This project fetches real on-chain data (transactions, events, contract details)
 🚧 This project is under active development.  
 Initial focus is on transaction explanation before expanding to contract and wallet analysis.
 
-Stage 2: Blockchain Transaction Fetcher
+
+## Stage 2: Blockchain Transaction Fetcher
+
 
 In this stage, I built a Python tool that connects to the Sepolia Ethereum testnet using Web3.py and an Infura RPC URL. The tool:
 
@@ -70,7 +72,8 @@ This stage showcases my ability to:
 Note: This tool was prototyped in Google Colab and then refactored into a modular Python project for portfolio purposes.
 
 
-Stage 3: AI Transaction Explainer
+## Stage 3: AI Transaction Explainer
+
 
 In this stage, I built an AI-powered blockchain transaction explainer in Python.
 
