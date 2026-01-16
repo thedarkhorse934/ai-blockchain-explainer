@@ -1,5 +1,8 @@
+# ai_explainer.py
+# Converts raw blockchain transaction data into plain-English explanations
+
 def explain_transaction(tx):
-    value_eth = tx["value"] / 10**18  # convert Wei to ETH
+    value_eth = tx["value"] / 10**18  # Convert Wei to ETH
     explanation = (
         f"Transaction {tx['hash']} was sent from {tx['from']} to {tx['to']}.\n"
         f"Amount transferred: {value_eth} ETH\n"
