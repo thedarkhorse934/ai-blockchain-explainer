@@ -69,6 +69,42 @@ This stage showcases my ability to:
 
 Note: This tool was prototyped in Google Colab and then refactored into a modular Python project for portfolio purposes.
 
+
+Stage 3: AI Transaction Explainer
+
+In this stage, I built an AI-powered blockchain transaction explainer in Python.
+
+The tool takes raw blockchain transaction data (from Stage 2) and generates a plain-English, human-readable explanation of the transaction. This allows anyone — even without blockchain knowledge — to understand what happened on-chain.
+
+Key features:
+
+Converts raw transaction data into clear English:
+
+- From and To addresses
+- Amount transferred (ETH)
+- Gas used
+- Block number
+- Transaction hash
+- Demonstrates modular Python design (ai_explainer.py as a reusable module)
+- Can work with static data for portfolio purposes or real transactions if desired
+- Highlights the ability to combine blockchain knowledge with AI-style processing to make technical data accessible
+
+Example output:
+
+Transaction 0x20c4b5ac97f191a7d7e2859766306dd95c60a8d580afdcb6b990b8b5b6723231 
+was sent from 0xYourFromAddress to 0xYourToAddress.
+Amount transferred: 1.0 ETH
+Gas used: 21000
+Included in block number: 1234567
+
+
+Skills demonstrated in Stage 3:
+
+- Python programming and modular design
+- Data parsing and formatting
+- Communication of complex technical data in plain language
+- Integrating blockchain data into AI-style explanations
+
 ---
 
 ## Motivation
