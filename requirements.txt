@@ -1,2 +1,4 @@
 web3
 python-dotenv
+!pip install web3
+
