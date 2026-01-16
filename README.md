@@ -56,3 +56,6 @@ I built this project to:
 - Explore practical uses of AI in blockchain tooling
 - Create a user-friendly layer on top of raw blockchain data
 
+- This project is tested with web3==6.15.1.
+
+
