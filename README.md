@@ -91,11 +91,11 @@ Converts raw transaction data into clear English:
 
 Example output:
 
-Transaction 0x20c4b5ac97f191a7d7e2859766306dd95c60a8d580afdcb6b990b8b5b6723231 
-was sent from 0xYourFromAddress to 0xYourToAddress.
-Amount transferred: 1.0 ETH
-Gas used: 21000
-Included in block number: 1234567
+- Transaction 0x20c4b5ac97f191a7d7e2859766306dd95c60a8d580afdcb6b990b8b5b6723231 
+- was sent from 0xYourFromAddress to 0xYourToAddress.
+- Amount transferred: 1.0 ETH
+- Gas used: 21000
+- Included in block number: 1234567
 
 
 Skills demonstrated in Stage 3:
