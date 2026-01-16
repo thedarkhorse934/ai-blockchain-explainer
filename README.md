@@ -51,21 +51,21 @@ Stage 2: Blockchain Transaction Fetcher
 
 In this stage, I built a Python tool that connects to the Sepolia Ethereum testnet using Web3.py and an Infura RPC URL. The tool:
 
--Fetches a transaction by its hash
--Retrieves and displays key details including:
--From and To addresses
--Value in Wei
--Gas used
--Block number
--Transaction hash
--Uses a .env file to securely manage API keys, demonstrating best practices for handling secrets
+- Fetches a transaction by its hash
+- Retrieves and displays key details including:
+- From and To addresses
+- Value in Wei
+- Gas used
+- Block number
+- Transaction hash
+- Uses a .env file to securely manage API keys, demonstrating best practices for handling secrets
 
 This stage showcases my ability to:
 
--Programmatically interact with the Ethereum blockchain
--Parse and handle blockchain data in Python
--Write reusable, modular code (fetch_transaction.py as a standalone module)
--Use environment variables for secure API management
+- Programmatically interact with the Ethereum blockchain
+- Parse and handle blockchain data in Python
+- Write reusable, modular code (fetch_transaction.py as a standalone module)
+- Use environment variables for secure API management
 
 Note: This tool was prototyped in Google Colab and then refactored into a modular Python project for portfolio purposes.
 
