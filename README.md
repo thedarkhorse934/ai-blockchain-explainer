@@ -109,3 +109,5 @@ I am building skills in:
 - AI-assisted systems
 
 This repository represents my transition from smart contract learning to full-stack Web3 thinking.
+
+Note: Output demonstrated locally using Sepolia testnet data via Web3.py.
