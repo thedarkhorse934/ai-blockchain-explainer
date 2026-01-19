@@ -77,7 +77,7 @@ This approach is applicable to:
 - Blockchain analytics
 - Compliance & reporting
 
-Web3 education tools
+### Web3 education tools
 
 🛠 Tech Stack
 
