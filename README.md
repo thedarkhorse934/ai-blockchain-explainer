@@ -1,4 +1,4 @@
-🧠 AI-Assisted Blockchain Transaction Explainer
+# 🧠 AI-Assisted Blockchain Transaction Explainer
 
 This project demonstrates how blockchain data can be programmatically retrieved and transformed into human-readable explanations using AI-style logic.
 
