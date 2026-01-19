@@ -1,134 +1,108 @@
-# AI Blockchain Explainer 🤖🧩
+🧠 AI-Assisted Blockchain Transaction Explainer
 
-An AI-assisted tool that explains Ethereum transactions and smart contracts in plain English.
+This project demonstrates how blockchain data can be programmatically retrieved and transformed into human-readable explanations using AI-style logic.
 
-This project bridges raw on-chain data with human-readable explanations by combining blockchain data parsing with a Large Language Model (LLM).
+It combines:
 
----
+- Ethereum blockchain interaction (Sepolia testnet)
+- Python backend development
+- AI-style data interpretation
+- Clean, modular project structure
 
-## Overview
+This repository is designed as a portfolio project showcasing entry-level blockchain + AI engineering skills.
 
-Blockchain data is powerful but difficult to interpret without technical knowledge.  
-This project fetches real on-chain data (transactions, events, contract details) and uses AI to generate clear explanations that are easy to understand.
+## 🚀 What This Project Does
 
----
-
-## Features (Planned)
-
-- Explain Ethereum transactions from a transaction hash
-- Detect ETH and ERC-20 transfers
-- Summarize contract interactions
-- Highlight notable or privileged actions
-- Plain-English AI explanations
-
----
-
-## Tech Stack
-
-- **Blockchain:** Ethereum (Sepolia testnet)
-- **On-chain access:** RPC provider (e.g. Infura / Alchemy)
-- **AI:** LLM API (e.g. OpenAI)
-- **Backend:** Python or Node.js (to be decided)
-
----
-
-## How It Will Work
-
-1. User provides a transaction hash
-2. Backend fetches transaction + receipt data
-3. Relevant events and actions are extracted
-4. Structured data is passed to an LLM
-5. AI returns a clear explanation of what happened
-
----
-
-## Project Status
-
-🚧 This project is under active development.  
-Initial focus is on transaction explanation before expanding to contract and wallet analysis.
-
-
-## Stage 2: Blockchain Transaction Fetcher
-
-
-In this stage, I built a Python tool that connects to the Sepolia Ethereum testnet using Web3.py and an Infura RPC URL. The tool:
-
-- Fetches a transaction by its hash
-- Retrieves and displays key details including:
-- From and To addresses
-- Value in Wei
-- Gas used
-- Block number
-- Transaction hash
-- Uses a .env file to securely manage API keys, demonstrating best practices for handling secrets
-
-This stage showcases my ability to:
-
-- Programmatically interact with the Ethereum blockchain
-- Parse and handle blockchain data in Python
-- Write reusable, modular code (fetch_transaction.py as a standalone module)
-- Use environment variables for secure API management
-
-Note: This tool was prototyped in Google Colab and then refactored into a modular Python project for portfolio purposes.
-
-
-## Stage 3: AI Transaction Explainer
-
-
-In this stage, I built an AI-powered blockchain transaction explainer in Python.
-
-The tool takes raw blockchain transaction data (from Stage 2) and generates a plain-English, human-readable explanation of the transaction. This allows anyone — even without blockchain knowledge — to understand what happened on-chain.
-
-Key features:
-
-Converts raw transaction data into clear English:
-
-- From and To addresses
-- Amount transferred (ETH)
-- Gas used
-- Block number
-- Transaction hash
-- Demonstrates modular Python design (ai_explainer.py as a reusable module)
-- Can work with static data for portfolio purposes or real transactions if desired
-- Highlights the ability to combine blockchain knowledge with AI-style processing to make technical data accessible
+1. Connects to the Ethereum Sepolia testnet via an RPC provider
+2. Fetches raw transaction data (sender, receiver, value, gas, block number)
+3. Passes this data into an AI-style explainer
+4. Outputs a plain-English explanation of what happened in the transaction
 
 Example output:
 
-- Transaction 0x20c4b5ac97f191a7d7e2859766306dd95c60a8d580afdcb6b990b8b5b6723231 
-- was sent from 0xYourFromAddress to 0xYourToAddress.
-- Amount transferred: 1.0 ETH
-- Gas used: 21000
-- Included in block number: 1234567
+“This transaction sent 0.1 ETH from address A to address B.
+It was included in block 5,123,456 and used 21,000 gas.”
 
+🧱 Project Structure
+src/
+├── main.py                 # Orchestrates the full pipeline
+├── blockchain/
+│   ├── __init__.py
+│   └── fetch_transaction.py # Blockchain data retrieval (Web3)
+└── ai/
+    ├── __init__.py
+    └── ai_explainer.py      # Converts raw data into human-readable text
 
-Skills demonstrated in Stage 3:
+🧩 Development Stages
+✅ Stage 1: Blockchain Foundations
 
-- Python programming and modular design
-- Data parsing and formatting
-- Communication of complex technical data in plain language
-- Integrating blockchain data into AI-style explanations
+- Learned Solidity fundamentals
+- Deployed an ERC-20 token to Sepolia
+- Built confidence working with Ethereum testnets
 
+✅ Stage 2: Blockchain Data Retrieval
 
-## Stage 4: Live Blockchain → AI Integration
+- Used Web3.py to connect to Sepolia
+- Retrieved real transaction data using a transaction hash
+- Parsed low-level blockchain fields (gas, value, block number)
 
-In this stage, the project integrates real blockchain data from the Sepolia Ethereum testnet with the AI Transaction Explainer. A live transaction is fetched programmatically and passed into the explainer, producing a human-readable explanation of real on-chain activity.
+✅ Stage 3: AI-Style Explanation Layer
 
-The project supports both:
+- Designed a Python module that interprets blockchain data
+- Converted raw values into readable explanations
+- Focused on clarity over hype (no black-box AI)
 
-- Sample data mode (for easy testing and portfolio review)
-- Live data mode (using Sepolia via Web3 and an RPC provider)
+✅ Stage 4: Integration
 
----
+- Connected blockchain and AI layers via main.py
+- Demonstrated an end-to-end pipeline
+- Structured the project like a real backend service
 
-## Motivation
+🧠 Why This Matters
 
-I built this project to:
-- Better understand how to interpret on-chain activity
-- Explore practical uses of AI in blockchain tooling
-- Create a user-friendly layer on top of raw blockchain data
+Most users don’t understand blockchain data.
 
+This project shows how:
 
+- Developers can bridge blockchain + AI
+- Raw on-chain data can become accessible
+- AI doesn’t have to mean “magic” — it can mean intelligent interpretation
 
-*This project is tested with web3==6.15.1.
+This approach is applicable to:
 
+- Wallet UX
+- Blockchain analytics
+- Compliance & reporting
 
+Web3 education tools
+
+🛠 Tech Stack
+
+- Python 3
+- Web3.py
+- Ethereum (Sepolia Testnet)
+- Modular backend architecture
+- GitHub version control
+
+🔐 Environment Variables
+
+This project uses a .env file (not committed) for RPC credentials:
+
+RPC_URL=https://sepolia.infura.io/v3/YOUR_PROJECT_ID
+
+📌 Notes
+
+- Designed as a learning + portfolio project
+- Not production-hardened
+- Focuses on clarity, structure, and fundamentals
+
+👋 About Me
+
+I am building skills in:
+
+- Blockchain development
+- Smart contracts
+- Backend engineering
+- AI-assisted systems
+
+This repository represents my transition from smart contract learning to full-stack Web3 thinking.
