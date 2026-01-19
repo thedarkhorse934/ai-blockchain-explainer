@@ -33,15 +33,6 @@ src/
     ├── __init__.py
     └── ai_explainer.py      # Converts raw data into human-readable text
 
-    src/
-├── main.py                 # Orchestrates the full pipeline
-├── blockchain/
-│   ├── __init__.py
-│   └── fetch_transaction.py # Blockchain data retrieval (Web3)
-└── ai/
-    ├── __init__.py
-    └── ai_explainer.py      # Converts raw data into human-readable text
-
 
 🧩 Development Stages
 ✅ Stage 1: Blockchain Foundations
