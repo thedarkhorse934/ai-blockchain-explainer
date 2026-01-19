@@ -108,6 +108,16 @@ Skills demonstrated in Stage 3:
 - Communication of complex technical data in plain language
 - Integrating blockchain data into AI-style explanations
 
+
+## Stage 4: Live Blockchain → AI Integration
+
+In this stage, the project integrates real blockchain data from the Sepolia Ethereum testnet with the AI Transaction Explainer. A live transaction is fetched programmatically and passed into the explainer, producing a human-readable explanation of real on-chain activity.
+
+The project supports both:
+
+- Sample data mode (for easy testing and portfolio review)
+- Live data mode (using Sepolia via Web3 and an RPC provider)
+
 ---
 
 ## Motivation
