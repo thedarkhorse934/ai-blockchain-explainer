@@ -23,6 +23,7 @@ Example output:
 “This transaction sent 0.1 ETH from address A to address B.
 It was included in block 5,123,456 and used 21,000 gas.”
 
+```
 🧱 Project Structure
 src/
 ├── main.py                 # Orchestrates the full pipeline
@@ -32,6 +33,7 @@ src/
 └── ai/
     ├── __init__.py
     └── ai_explainer.py      # Converts raw data into human-readable text
+```
 
 
 🧩 Development Stages
